@@ -405,15 +405,17 @@
                         </svg>
                     </span>
                 </div>
-                <div class="modal-field">
+                <div class="modal-field-commit">
                     <label class="modal-label" for="commit">Комментарий</label>
                     <textarea name="commit" id="commit" placeholder="Введите текст" class="modal-text-area"></textarea>
                 </div>
                 <div class="modal-field-check">
-                    <input type="checkbox" name="input-check" id="input-check" class="modal-input-check">
-                    <label for="input-check">Соглашаюсь с рассылкой и принимаю</label>
+                    <input type="checkbox" name="input-check" id="input-check" value="input-check" class="modal-input-check">
+                    <label class="modal-chekc-lable" for="input-check">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a></label>
                 </div>
-                <button type="submit" class="modal-btn">Отправить</button>
+                <div class="modal-btn-box">
+                    <button type="submit" class="modal-btn">Отправить</button>
+                </div>
             </form>
         </div>
     </div>

@@ -219,7 +219,7 @@ ul,ol {
 }
 
 .button{
-    border: solid transparent;
+    border: transparent;
 }
 
 .hero-button{
@@ -922,7 +922,7 @@ ul,ol {
 
 }
 
-.backdrop.is-hidden .modal{
+.backdrop .is-hidden .modal{
     transform: translate(-50%, -50%) scale(0.8);
     transition: transform var(--timing-function-trasition), opacity var(--timing-function-trasition), visibility var(--timing-function-trasition);
 }
@@ -991,8 +991,17 @@ ul,ol {
     width: 448px;
     height: 40px;
     border-radius: 4px;
-    border-color: rgba(33, 33, 33, 0.2);
+    border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 42px;
+    outline: none;
+}
+
+.modal-input:focus{
+    border-color: var(--akcent-color);
+}
+
+.modal-input:focus + .modal-icon{
+    fill: var(--akcent-color);
 }
 
 .modal-label{
@@ -1003,11 +1012,13 @@ ul,ol {
     margin-bottom: 4px;
 }
 
-
-
 .modal-field{
     position: relative;
     margin-bottom: 28px;
+}
+
+.modal-field-commit{
+    margin-bottom: 20px;
 }
 
 .modal-icon{
@@ -1023,9 +1034,79 @@ ul,ol {
     resize: none;
 }
 
-.modal-input-check{
+.modal-text-area{
     padding-top: 12px;
     padding-right: 16px;
     padding-bottom: 12px;
     padding-left: 16px;
+}
+
+.modal-chekc-lable{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-chekc-lable::before{
+    content: '';
+    width: 16px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #212121;
+    margin-right: 7px;
+}
+
+.modal-link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--akcent-color);
+}
+
+.modal-field-check{
+    /* text-align: center; */
+    margin-bottom: 30px;
+}
+
+.modal-input-check{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.modal-btn-box{
+    display: block;
+    text-align: center;
+}
+
+.modal-btn{
+    display: inline-block;
+    font-family: 'Roboto', Tahoma, sans-serif;
+    background-color: var(--akcent-color);
+    color:var(--title-white-color);
+    min-width: 200px;
+    border-color: transparent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    
+    align-items: center;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
