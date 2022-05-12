@@ -673,6 +673,75 @@ ul,ol {
 
 }
 
+.footer-subscription{
+    display: flex;
+    flex-direction: column;
+    /* align-items: baseline; */
+
+
+    margin-left: 93px;
+    margin-top: 12px;
+
+}
+
+.footer-subscription-title{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-white-color);
+
+    margin-bottom: 20px;
+}
+
+.footer-subscription-mail{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: rgba(47, 48, 58, 1);
+    padding-left: 16px;
+    color: var(--silver-icon);
+
+    margin-right: 12px;
+
+
+}
+
+.footer-subscription-mail:focus{
+    border-color:var(--akcent-color);
+}
+
+.footer-subscription-btn{
+    display: inline-flex;
+    font-family: 'Roboto', Tahoma, sans-serif;
+    background-color: var(--akcent-color);
+    color:var(--title-white-color);
+    min-width: 200px;
+    height: 50px;
+    border-color: transparent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    
+    align-items: center;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-icon-send{
+    margin-left: 10px;
+}
+
 
 /* ----------------------  портфоліо  -------------------------------------------------------*/
 
@@ -907,6 +976,8 @@ ul,ol {
     letter-spacing: 0.03em;
 }
 
+
+
 /* -------------------------------- backdrop --------------------------- */
 
 
@@ -1085,9 +1156,12 @@ ul,ol {
     margin-right: 7px;
 }
 
-.modal-input-check:focus + .modal-chekc-lable::before{
+.modal-input-check:checked + .modal-chekc-lable::before{
     background-color: var(--akcent-color);
-    background-image: url(../images/symbol-defs.svg#icon-check);
+    background-image: url("data:image/svg+xml,%3Csymbol id='icon-check' viewBox='0 0 42 32'%3E%3Cpath fill='%23fff' style='fill: var(--color1, %23fff); stroke: var(--color1, %23fff)' stroke='%23fff' stroke-linejoin='miter' stroke-linecap='butt' stroke-miterlimit='4' stroke-width='0.64' d='M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z'%3E%3C/path%3E%3C/symbol%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .modal-link{
